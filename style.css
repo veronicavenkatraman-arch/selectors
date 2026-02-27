@@ -1,0 +1,51 @@
+body{
+    font-family: arial,sans-serif;
+    background-color:aqua;
+    color: blue;
+}
+h1{
+    color: darkorchid;
+}
+/*Atribute selector*/
+a{
+    color: darkorchid;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+/*child selector*/
+ul>li{
+    font-weight: bold;
+}
+/*sibling selector*/
+h2+p{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*:hover pseudo-class*/
+ul li:hover{
+    color: rgb(186, 255, 95);
+}
+/*:nth-child(n) pseudo-class*/
+ul il:nth-child{
+    background-color: chartreuse;
+}
+/*:not(selector)pseudo-class*/
+p:not(:first-of-type){
+    text-decoration:underline;
+}
+/*:before pseudo-element*/
+ul li::before{
+    content: "";
+}
+/*::after pseudo-element*/
+a::after{
+     content: "";
+}
+/*::first-letter pseudo-element*/
+p::first-letter{
+    font-size: 200%;
+    color: blueviolet;
+}
